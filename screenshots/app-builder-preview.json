@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Cimes",
+      "hasCanvas": false,
+      "bodyTextLen": 38,
+      "bodyTextHash": "03d2fb022393acd100fb57ff472d2854b7e4e002bae8cb55167a8c9c28c73e1d",
+      "bodyTextPrefix": "VOL LIBRE Cimes Préparation du massif…",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Cimes",
+      "hasCanvas": false,
+      "bodyTextLen": 38,
+      "bodyTextHash": "03d2fb022393acd100fb57ff472d2854b7e4e002bae8cb55167a8c9c28c73e1d",
+      "bodyTextPrefix": "VOL LIBRE Cimes Préparation du massif…",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
