@@ -11,3 +11,5 @@ screenshots/
 .tanstack/
 .grok/
 dist/
+desktop-dist/
+release/
