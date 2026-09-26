@@ -3,3 +3,11 @@ node_modules/
 .github_repo
 .env
 .env.*
+artifacts/
+screenshots/
+.vercel/
+.output/
+.nitro/
+.tanstack/
+.grok/
+dist/
