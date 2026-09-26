@@ -1,5 +1,5 @@
 {
-  "name": "app-builder-workspace",
+  "name": "cimes",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -18,7 +18,9 @@
     "check:auth": "node scripts/check-auth-invariant.mjs",
     "test": "node --test 'scripts/**/*.test.mjs' && node --experimental-strip-types --test src/lib/app-data/app-data.test.ts src/lib/app-data/readiness-schedule.test.ts src/lib/auth/gate-identity.test.ts src/lib/auth/sign-in-gate.test.ts",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "desktop:build": "vite build --config vite.desktop.config.ts",
+    "desktop:pack": "electron-builder --win portable --x64"
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.5.4",
@@ -96,5 +98,18 @@
     "typescript": "^5.7.0",
     "typescript-eslint": "^8.56.1",
     "vite": "^8.2.0"
+  },
+  "productName": "Cimes",
+  "version": "1.0.0",
+  "main": "electron/main.mjs",
+  "build": {
+    "appId": "app.cimes.game",
+    "productName": "Cimes",
+    "files": ["electron/**", "desktop-dist/**", "package.json"],
+    "directories": { "output": "release" },
+    "win": {
+      "target": [{ "target": "portable", "arch": ["x64"] }],
+      "artifactName": "Cimes-${version}-win.exe"
+    }
   }
 }
